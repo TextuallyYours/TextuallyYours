@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textually Yours - 30-Min Text Support Sessions | $50 | Book Today</title>
+    <meta name="description" content="30-minute text support sessions with a real person. Perfect for remote workers, busy parents, and introverts. No calls, no pressure - just human connection. $50/session.">
+    <meta name="keywords" content="text therapy, text support, remote worker support, introvert support, busy parent help, text conversation, mental health support">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Textually Yours - 30-Min Text Support Sessions">
+    <meta property="og:description" content="Scheduled like therapy, comfortable like texting. 30 minutes of judgment-free conversation with a real person.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://textuallyyours.netlify.app/">
+    <link rel="canonical" href="https://textuallyyours.netlify.app/">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.65;
+            color: #2c3e50;
+            background: #fdfdfd;
+            font-size: 16px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 0;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            font-size: 2.75em;
+            margin-bottom: 15px;
+            color: #1a252f;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+        
+        .tagline {
+            font-size: 1.35em;
+            color: #5a6c7d;
+            margin-bottom: 20px;
+            font-weight: 400;
+            line-height: 1.4;
+        }
+        
+        .price-highlight {
+            font-size: 2.75em;
+            color: #0d7377;
+            font-weight: 800;
+            margin: 20px 0;
+            text-shadow: 0 1px 2px rgba(13, 115, 119, 0.1);
+        }
+        
+        .duration {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+        }
+        
+        .cta-primary {
+            background: #d32f2f;
+            color: white;
+            padding: 20px 40px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.25em;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(211, 47, 47, 0.25);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .cta-primary:hover {
+            background: #b71c1c;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(211, 47, 47, 0.35);
+        }
+        
+        .section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #1a252f;
+            margin-bottom: 25px;
+            font-size: 1.9em;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+        }
+        
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .benefit-card {
+            background: #f8fafc;
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 4px solid #0d7377;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        
+        .benefit-card h3 {
+            color: #1a252f;
+            margin-bottom: 12px;
+            font-size: 1.3em;
+            font-weight: 600;
+        }
+        
+        .benefit-card p {
+            color: #475569;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .feature-list li {
+            padding: 12px 0;
+            padding-left: 30px;
+            position: relative;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .feature-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #0d7377;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+        
+        .availability {
+            background: #f0f9ff;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 25px 0;
+            border-left: 4px solid #0284c7;
+        }
+        
+        .availability h3 {
+            color: #0369a1;
+            margin-bottom: 18px;
+            font-size: 1.3em;
+        }
+        
+        .time-slot {
+            background: white;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+        
+        .testimonial {
+            background: #f0f9ff;
+            padding: 35px;
+            border-radius: 12px;
+            border-left: 4px solid #0d7377;
+            font-style: italic;
+            margin: 35px 0;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        
+        .testimonial p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #1e293b;
+            line-height: 1.7;
+        }
+        
+        .social-proof {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .social-proof-item {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .social-proof-item strong {
+            display: block;
+            font-size: 1.5em;
+            color: #0d7377;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        
+        .guarantee {
+            background: #fff3cd;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .final-cta {
+            background: linear-gradient(135deg, #d32f2f, #f44336);
+            color: white;
+            padding: 50px;
+            border-radius: 16px;
+            text-align: center;
+            margin-top: 50px;
+            box-shadow: 0 10px 40px rgba(211, 47, 47, 0.2);
+        }
+        
+        .final-cta h2 {
+            color: white;
+            margin-bottom: 18px;
+            font-size: 2.2em;
+        }
+        
+        .final-cta p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            opacity: 0.95;
+            line-height: 1.6;
+        }
+        
+        .final-cta .cta-primary {
+            background: white;
+            color: #d32f2f;
+            font-weight: 700;
+            font-size: 1.3em;
+            padding: 22px 45px;
+        }
+        
+        .final-cta .cta-primary:hover {
+            background: #f8f9fa;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(255,255,255,0.3);
+        }
+        
+        .question-item {
+            margin-bottom: 20px;
+        }
+        
+        .question-item h3 {
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+        
+        .question-item p {
+            color: #555;
+            font-size: 0.95em;
+        }
+        
+        .guarantee h3 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        .guarantee p {
+            margin: 0;
+            font-size: 0.95em;
+            color: #856404;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .price-highlight {
+                font-size: 2em;
+            }
+            
+            .benefit-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+            
+            .social-proof {
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Textually Yours</h1>
+            <p class="tagline">Scheduled like therapy, comfortable like texting</p>
+            <div class="price-highlight">$50</div>
+            <p class="duration">30-minute focused text conversation</p>
+            <a href="https://app.squareup.com/appointments/book/9bce8gnj13lehf/LKWMMS2DGHFAV/start" class="cta-primary">Book Your Session</a>
+        </header>
+
+        <section class="section">
+            <h2>Perfect For People With Real Lives</h2>
+            <div class="benefit-grid">
+                <div class="benefit-card">
+                    <h3>Remote Workers</h3>
+                    <p>Get real conversation without leaving your home office</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Busy Parents</h3>
+                    <p>Connect during nap time or after bedtime</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Introverts</h3>
+                    <p>Process thoughts at your own pace, no small talk pressure</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Overthinkers</h3>
+                    <p>Talk through your thoughts with someone who gets it</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Anyone Feeling Isolated</h3>
+                    <p>Human connection on your terms</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>What You Get</h2>
+            <ul class="feature-list">
+                <li>30 minutes of focused, judgment-free text conversation</li>
+                <li>Real-time responses from an actual human (not AI)</li>
+                <li>Complete privacy via Sodu app - your personal number stays private</li>
+                <li>Flexible scheduling through our booking link</li>
+                <li>Talk about anything: work stress, relationships, life decisions, or just need to vent</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Why This Works</h2>
+            <ul class="feature-list">
+                <li>No phone calls, no video, no pressure</li>
+                <li>Perfect for introverts, remote workers, busy parents</li>
+                <li>Scheduled like therapy, comfortable like texting</li>
+            </ul>
+        </section>
+
+        <div class="availability">
+            <h3>📅 Available Times</h3>
+            <div class="time-slot">Monday-Friday: 10:00 AM - 1:00 PM (PST)</div>
+            <div class="time-slot">Friday Evening: 8:30 PM - 9:30 PM (PST)</div>
+            <div class="time-slot">Saturday: 10:00 AM - 12:00 PM (PST)</div>
+        </div>
+
+        <div class="social-proof">
+            <div class="social-proof-item">
+                <strong>Real Person</strong>
+                <span>Not AI or bot</span>
+            </div>
+            <div class="social-proof-item">
+                <strong>Same Day</strong>
+                <span>Book today, text today</span>
+            </div>
+            <div class="social-proof-item">
+                <strong>Ultra Private</strong>
+                <span>Sodu app protects your number</span>
+            </div>
+        </div>
+
+        <div class="testimonial">
+            <p>"I didn't think texting would help... but it felt like someone was really there with me. Just listening. And that was everything."</p>
+            <strong>— TY Client</strong>
+        </div>
+
+        <section class="section">
+            <h2>Common Questions</h2>
+            
+            <div class="question-item">
+                <h3>Is this therapy?</h3>
+                <p>No. I'm not a therapist. I don't give advice or diagnose. I'm here for supportive, judgment-free conversation.</p>
+            </div>
+            
+            <div class="question-item">
+                <h3>What can we talk about?</h3>
+                <p>Anything on your mind. Work stress, relationships, life decisions, overthinking, or just need to vent.</p>
+            </div>
+            
+            <div class="question-item">
+                <h3>How does scheduling work?</h3>
+                <p>Book through our booking link. Pick your time, pay securely, then show up via text. Simple.</p>
+            </div>
+            
+            <div class="question-item">
+                <h3>Can I cancel or reschedule?</h3>
+                <p>Yes, up to 2 hours before your appointment. No refunds once the session begins.</p>
+            </div>
+            
+            <div class="question-item">
+                <h3>Is it really anonymous?</h3>
+                <p>Yes. You don't need to share your name. We use Sodu, a privacy-focused text app, so your personal number stays private. No message history is stored after your session.</p>
+            </div>
+        </section>
+
+        <div class="guarantee">
+            <h3>Booking Policy</h3>
+            <p>All bookings made through our booking link. Cancel or reschedule up to 2 hours before your appointment. No refunds once session begins.</p>
+        </div>
+
+        <div class="final-cta" id="book">
+            <h2>Ready to Talk?</h2>
+            <p>30 minutes of real conversation. No pressure. Just presence.</p>
+            <a href="https://app.squareup.com/appointments/book/9bce8gnj13lehf/LKWMMS2DGHFAV/start" class="cta-primary">Book Your $50 Session</a>
+        </div>
+    </div>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Textually Yours",
+        "description": "30-minute text support sessions with a real person. Perfect for remote workers, busy parents, and introverts.",
+        "provider": {
+            "@type": "Person",
+            "name": "Textually Yours"
+        },
+        "areaServed": "Worldwide",
+        "offers": {
+            "@type": "Offer",
+            "name": "30-Minute Text Support Session",
+            "price": "50",
+            "priceCurrency": "USD",
+            "description": "Focused, judgment-free text conversation with real-time responses"
+        },
+        "serviceType": "Text Support",
+        "availableChannel": {
+            "@type": "ServiceChannel",
+            "serviceType": "Text Messaging"
+        }
+    }
+    </script>
+</body>
+</html>
