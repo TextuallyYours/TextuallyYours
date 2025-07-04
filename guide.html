@@ -41,12 +41,6 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         
-        .logo-image {
-            max-width: 200px;
-            height: auto;
-            margin-bottom: 20px;
-        }
-        
         .logo {
             font-size: 1.8rem;
             font-weight: 700;
@@ -88,27 +82,12 @@
             line-height: 1.4;
         }
         
-        .intro-text {
-            font-size: 1.1em;
-            color: #475569;
-            margin-bottom: 30px;
-            text-align: center;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            line-height: 1.6;
-        }
-        
-        .intro-text strong {
-            color: #1a252f;
-        }
-        
         .pain-points {
             background: #f8fafc;
             padding: 30px;
             border-radius: 12px;
             margin-bottom: 40px;
-            border-left: 4px solid #0d7377;
+            border-left: 4px solid #7a8471;
             box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
         
@@ -141,7 +120,7 @@
             content: "✓";
             position: absolute;
             left: 0;
-            color: #0d7377;
+            color: #7a8471;
             font-weight: bold;
             font-size: 1.3em;
         }
@@ -170,7 +149,7 @@
             background: #f8fafc;
             padding: 30px;
             border-radius: 12px;
-            border-left: 4px solid #0d7377;
+            border-left: 4px solid #7a8471;
             transition: all 0.3s ease;
             box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
@@ -210,50 +189,6 @@
             letter-spacing: -0.01em;
         }
         
-        .form-container {
-            max-width: 400px;
-            margin: 0 auto;
-        }
-        
-        .email-input {
-            width: 100%;
-            padding: 20px;
-            font-size: 1rem;
-            border: 2px solid #e2e8f0;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            background: white;
-            transition: all 0.3s ease;
-        }
-        
-        .email-input:focus {
-            outline: none;
-            border-color: #0d7377;
-            box-shadow: 0 0 0 3px rgba(13, 115, 119, 0.1);
-        }
-        
-        .submit-btn {
-            width: 100%;
-            background: #d32f2f;
-            color: white;
-            padding: 20px 40px;
-            font-size: 1.25em;
-            font-weight: 600;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(211, 47, 47, 0.25);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        
-        .submit-btn:hover {
-            background: #b71c1c;
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(211, 47, 47, 0.35);
-        }
-        
         .trust-indicators {
             display: flex;
             justify-content: center;
@@ -272,15 +207,15 @@
         
         .trust-item:before {
             content: "✓";
-            color: #0d7377;
+            color: #7a8471;
             font-weight: bold;
         }
         
         .testimonial {
-            background: #f0f9ff;
+            background: #f8faf6;
             padding: 35px;
             border-radius: 12px;
-            border-left: 4px solid #0d7377;
+            border-left: 4px solid #7a8471;
             font-style: italic;
             margin: 30px 0;
             text-align: center;
@@ -304,7 +239,7 @@
             background: #f8fafc;
             padding: 30px;
             border-radius: 12px;
-            border-left: 4px solid #0d7377;
+            border-left: 4px solid #7a8471;
             margin-bottom: 30px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
@@ -339,14 +274,14 @@
         }
         
         .back-link a {
-            color: #0d7377;
+            color: #7a8471;
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s ease;
         }
         
         .back-link a:hover {
-            color: #0a5d61;
+            color: #6b7562;
             text-decoration: underline;
         }
         
@@ -429,7 +364,20 @@
             <div class="email-form">
                 <h2>Get Your Free Guide Now</h2>
                 
-                <script async data-uid="a0f72fc5e6" src="https://foundedby-b.kit.com/a0f72fc5e6/index.js"></script>
+                <!-- ConvertKit Form -->
+                <form action="https://app.kit.com/forms/8267536/subscriptions" method="post" style="max-width: 400px; margin: 0 auto;">
+                    <div style="margin-bottom: 20px;">
+                        <input type="email" name="email_address" placeholder="Enter your email address" required 
+                               style="width: 100%; padding: 20px; font-size: 1rem; border: 2px solid #e2e8f0; border-radius: 8px; background: white; transition: all 0.3s ease;">
+                    </div>
+                    <button type="submit" 
+                            style="width: 100%; background: #d32f2f; color: white; padding: 20px 40px; font-size: 1.25em; font-weight: 600; border: none; border-radius: 8px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(211, 47, 47, 0.25); text-transform: uppercase; letter-spacing: 0.5px;">
+                        Send me the guide
+                    </button>
+                    <div style="text-align: center; color: #888; font-size: 0.9rem; margin-top: 1rem;">
+                        We respect your privacy. Unsubscribe at anytime.
+                    </div>
+                </form>
                 
                 <div class="trust-indicators">
                     <div class="trust-item">Instant download</div>
